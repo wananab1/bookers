@@ -13,6 +13,42 @@
  *= require_tree .
  *= require_self
  */
-*h1{
-	color: red;
+
+ /*共通部分*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ /*共通部分・ヘッダー*/
+header{
+	width:100%;
+	background-color: #2f4f4f;
+	height: 60px;
+}
+.header-body{
+	margin-left: 20px;
+	line-height:60px;
+	color: white;
+}
+
+/*トップページ*/
+.top-page{
+	width:100%;
+}
+.top-text{
+	width:90%;
+	margin: 150px auto 0;
+	text-align: center;
+}
+.top-item{
+	display:inline-block;
+}
+.top-text h1{
+	font-size: 80px;
+	padding-bottom: 40px;
+}
+.top-text p{
+	font-size: 20px;
+	padding-bottom: 20px;
 }
