@@ -31,6 +31,11 @@ header{
 	line-height:60px;
 	color: white;
 }
+.container{
+	width:90%;
+	margin:0 auto;
+
+}
 
 /*トップページ*/
 .top-page{
@@ -52,3 +57,30 @@ header{
 	font-size: 20px;
 	padding-bottom: 20px;
 }
+/*投稿一覧ページ*/
+.index-title{
+	text-align: center;
+	padding-bottom: 40px;
+}
+.index-title h1{
+	display:inline-block;
+}
+table{
+	width:90%;
+	margin: 0 auto;
+}
+.post-title,.post-body{
+	padding: 5px;
+}
+.post-title{
+	width:25%;
+}
+.post-body{
+	width:65%;	
+}
+
+
+
+
+
+
