@@ -2,3 +2,5 @@
 <span><%= @post.title %></span>
 <h4>review</h4>
 <span><%= @post.body %></span>
+<p><%= link_to "編集", edit_post_path(@post) %></p>
+<p><%= link_to "削除", post_path(@post), method: :delete %></p>
