@@ -51,7 +51,7 @@ header{
 }
 .top-text h1{
 	font-size: 80px;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 }
 .top-text p{
 	font-size: 20px;
@@ -60,7 +60,7 @@ header{
 /*投稿一覧ページ*/
 .index-title{
 	text-align: center;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 }
 .index-title h1{
 	display:inline-block;
@@ -68,6 +68,7 @@ header{
 table{
 	width:90%;
 	margin: 0 auto;
+	padding-bottom: 40px;
 }
 .post-title,.post-body{
 	padding: 5px;
@@ -76,7 +77,10 @@ table{
 	width:25%;
 }
 .post-body{
-	width:65%;	
+	width:65%;
+}
+.new-body{
+	text-align: center;
 }
 
 
