@@ -1,2 +1,20 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<!-- 投稿一覧 -->
+<h1>投稿一覧</h1>
+<h4>1</h4>
+<h4>2</h4>
+<h4>3</h4>
+<h4>4</h4>
+<!-- 新規投稿機能 -->
+<h2>新規投稿</h2>
+
+<%= form_for(@post) do |f| %>
+
+	<h4>title</h4>
+	<%= f.text_field :title %>
+
+	<h4>review</h4>
+	<%= f.text_area :body %>
+
+	<%= f.submit '投稿' %>
+
+<% end %>

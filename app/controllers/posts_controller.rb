@@ -3,10 +3,14 @@ class PostsController < ApplicationController
 	def top
 	end
 
-	def new
+	def index
+		@post = Post.new
 	end
 
-	def index
+	def create
+		post = Post.new(post_params)
+		post.save
+		redirect_to posts_path
 	end
 
 	def show
@@ -21,6 +25,9 @@ class PostsController < ApplicationController
 	def destroy
 	end
 
-
+	private
+	def post_params
+		params.require(:post).permit(:title, :body)
+	end
 
 end
