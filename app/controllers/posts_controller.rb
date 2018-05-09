@@ -4,6 +4,7 @@ class PostsController < ApplicationController
 	end
 
 	def index
+		@posts = Post.all
 		@post = Post.new
 	end
 
@@ -14,6 +15,7 @@ class PostsController < ApplicationController
 	end
 
 	def show
+		@post = Post.find(params[:id])
 	end
 
 	def edit

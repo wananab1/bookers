@@ -1,9 +1,16 @@
 <!-- 投稿一覧 -->
 <h1>投稿一覧</h1>
-<h4>1</h4>
-<h4>2</h4>
-<h4>3</h4>
-<h4>4</h4>
+<% @posts.each do |post| %>
+	<h4>title</h4>
+	<span><%= post.title %></span>
+	<h4>review</h4>
+	<span><%= post.body %></span>
+	<%= link_to "詳細", post_path(post) %>
+	<p>__________________</p>
+<% end %>
+
+
+
 <!-- 新規投稿機能 -->
 <h2>新規投稿</h2>
 
