@@ -16,7 +16,13 @@
 		<% @posts.each do |post| %>
 			<tr>
 				<td class="post-title"><%= link_to post.title, post_path(post) %></td>
-				<td class="post-body">: <%= post.body %></td>
+				<td class="post-body">
+					<% if post.body.length >= 40 %>
+						<%= post.body.slice(0, 40) %>...
+					<% else %>
+						<%= post.body %>
+					<% end %>
+				</td>
 				<td class="post-item"><%= link_to "編集", edit_post_path(post) %></td>
 				<td class="post-item"><%= link_to "削除", post_path(post), method: :delete, data: {confirm: '削除しますか？'} %></td>
 			</tr>
