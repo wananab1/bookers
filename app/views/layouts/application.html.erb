@@ -18,7 +18,9 @@
 
     <!-- フラッシュメッセージ -->
     <% if flash[:notice] %>
-	    <p style="color:blue"><%= flash[:notice] %></p>
+	    <p class="flash">
+        <span><%= flash[:notice]%></span>
+      </p>
 	  <% end %>
 
     <%= yield %>

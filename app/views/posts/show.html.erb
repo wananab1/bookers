@@ -1,11 +1,14 @@
-<h4>title</h4>
-<span><%= @post.title %></span>
-<h4>review</h4>
-<span><%= @post.body %></span>
-<p>
-	<%= link_to "編集", edit_post_path(@post) %>
-	|
-	<%= link_to "削除", post_path(@post), method: :delete, data: {confirm: '削除しますか？'} %>
-</p>
-<p>	<%= link_to "投稿一覧に戻る", posts_path %></p>
-
+<div class="container">
+	<div class="show-body">
+		<h4>title</h4>
+		<p class="show-post-title"><%= @post.title %></p>
+		<h4>review</h4>
+		<p class="show-post-body"><%= @post.body %></p>
+		<p class="show-link">
+			<%= link_to "編集", edit_post_path(@post) %>
+			|
+			<%= link_to "削除", post_path(@post), method: :delete, data: {confirm: '削除しますか？'} %>
+		</p>
+		<p class="index-link">	<%= link_to "投稿一覧に戻る", posts_path %></p>
+	</div>
+</div>

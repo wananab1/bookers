@@ -20,7 +20,21 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+input[type="text"]{
+	font-size: 20px;
+}
+/*大きさが変わらない？*/
+input[type="submit"]{
+	font-size: 20px;
+}
+textarea{
+	font-size: 20px;
+}
+.index-link{
+	padding-top: 20px;
+}
  /*共通部分・ヘッダー*/
+
 header{
 	width:100%;
 	background-color: #2f4f4f;
@@ -79,12 +93,38 @@ table{
 .post-body{
 	width:65%;
 }
-.new-body{
+.new-body,.edit-body,.show-body{
 	text-align: center;
 }
+/*詳細ページ*/
+.show-body h4{
+	font-size: 28px;
+}
+.show-post-title{
+	font-size: 18px;
+	width: 60%;
+	display: inline-block;
+	padding: 20px 0;
+}
+.show-post-body{
+	font-size: 18px;
+	width: 60%;
+	display: inline-block;
+	text-align: left;
+	padding: 20px 0 40px;
+}
+/*編集ページ*/
 
-
-
-
+/*フラッシュメッセージ*/
+.flash{
+	color:blue;
+	text-align: center;
+	height:40px;
+	background-color: #FFA500;
+}
+.flash span{
+	line-height: 40px;
+	font-size: 20px;
+}
 
 
