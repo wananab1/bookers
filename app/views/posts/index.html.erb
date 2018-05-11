@@ -38,10 +38,10 @@
 		<%= form_for(@post) do |f| %>
 
 		<h4 class="form-heading">title</h4>
-		<%= f.text_field :title, :size=>"30" %>
+		<%= f.text_field :title, :size=>"30", value: @post.title %>
 
 		<h4 class="form-heading">review</h4>
-		<%= f.text_area :body, :size=>"50x7" %>
+		<%= f.text_area :body, :size=>"50x7", value: @post.body %>
 
 		<div>
 			<%= f.submit '投稿'%>

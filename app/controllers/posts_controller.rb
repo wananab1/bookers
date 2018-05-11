@@ -16,7 +16,6 @@ class PostsController < ApplicationController
 			flash[:notice] = "New Post !!"
 		else
 			redirect_to posts_path
-
 		end
 	end
 
