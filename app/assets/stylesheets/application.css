@@ -19,7 +19,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
+	font-family: verdana, arial, helvetica, sans-serif;
+
+	}
 input[type="text"]{
 	font-size: 20px;
 }
@@ -33,7 +35,11 @@ textarea{
 .index-link{
 	padding-top: 20px;
 }
+.form-heading{
+	padding: 10px;
+}
  /*共通部分・ヘッダー*/
+
 
 header{
 	width:100%;
@@ -74,7 +80,7 @@ header{
 /*投稿一覧ページ*/
 .index-title{
 	text-align: center;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 }
 .index-title h1{
 	display:inline-block;
@@ -83,6 +89,9 @@ table{
 	width:90%;
 	margin: 0 auto;
 	padding-bottom: 40px;
+}
+.table-heading{
+	text-align: left;
 }
 .post-title,.post-body{
 	padding: 5px;

@@ -13,7 +13,10 @@ class PostsController < ApplicationController
 
 		if post.save
 			redirect_to posts_path
-			flash[:notice] = "投稿を作成しました"
+			flash[:notice] = "New Post !!"
+		else
+			redirect_to posts_path
+
 		end
 	end
 
@@ -31,6 +34,8 @@ class PostsController < ApplicationController
 		if post.update(post_params)
 			flash[:notice] = "投稿を編集しました"
 			redirect_to post_path(post.id)
+		else
+			redirect_to edit_post_path(post.id)
 		end
 	end
 
